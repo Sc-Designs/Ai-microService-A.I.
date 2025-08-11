@@ -9,6 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", AiRouter);
 
-app.listen(3003, () => {
-  console.log("👷🏽‍♂️ AI Service Running on 3003...");
+app.listen(3000, () => {
+  console.log("👷🏽‍♂️ AI Service Running on 3000...");
 });
