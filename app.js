@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/",(req, res)=>{
+app.get("/",(req, res)=>{
   res.send("Health Check");
 });
 app.use("/api", AiRouter);
