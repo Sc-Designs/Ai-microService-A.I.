@@ -3,7 +3,7 @@ import axios from 'axios';
 const sendResultIdToUser = async (resultId, token) => {
     try {
         await axios.post(
-          `${process.env.USER_API_URL}/result-add`,
+          `${process.env.USER_API_URL}/api/result-add`,
           { resultId },
           {
             headers: {
